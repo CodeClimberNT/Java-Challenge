@@ -23,7 +23,7 @@ _' kyu ' is the difficulty: easiest 8kyu, hardest 1kyu_
 
 ### 6 kyu
 
-7. [Your Order, please](List%20Of%20Challenges/7.%20Your%20Order,%20please.java)
+7. [Your Order, please](List%20Of%20Challenges/7.%20Your%20Order%20,%20please.java)
 8.
 9.
 
