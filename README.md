@@ -10,5 +10,9 @@ _The challenges are organized in a chronological order_
 _' kyu ' is the difficulty: easiest 8kyu, hardest 1kyu_
 
 ## Challenge names:
-### 8kyu
+### 8 kyu
 1. [Square(n) Sum](List%20Of%20Challenges/1.%20Square(n)%20Sum.java)
+
+### 7 kyu
+
+2. [Shortest Word](List%20Of%20Challenges/2.%20Shortest%20Word.java)
