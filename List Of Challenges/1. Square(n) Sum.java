@@ -1,4 +1,5 @@
 //If you wanna download this file remember to rename the file as the class name
+
 public class Kata{
     
     /*  Kata Square(n) Sum 8 kyu
