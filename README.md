@@ -17,9 +17,9 @@ _' kyu ' is the difficulty: easiest 8kyu, hardest 1kyu_
 
 2. [Shortest Word](List%20Of%20Challenges/2.%20Shortest%20Word.java)
 3. [Sum of the first nth term of the Series](List%20Of%20Challenges/3.%20Sum%20of%20the%20first%20nth%20term%20of%20the%20Series.java)
-4. [Mumbling](List%20Of%20Challenges/4.%20)
-5. [Vowels Count](List%20Of%20Challenges/5.%20)
-6. [You're a Square!](List%20Of%20Challenges/6.%20)
+4. [Mumbling](List%20Of%20Challenges/4.%20Mumbling.java)
+5. [Vowels Count](List%20Of%20Challenges/5.%20Vowels%20Count.java)
+6. [You're a Square!](List%20Of%20Challenges/6.%20You're%20a%20Square!.java)
 
 ### 6 kyu
 
