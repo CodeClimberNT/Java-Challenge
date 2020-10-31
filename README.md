@@ -23,13 +23,14 @@ _' kyu ' is the difficulty: easiest 8kyu, hardest 1kyu_
 
 ### 6 kyu
 
-7. [Your Order, please](List%20Of%20Challenges/7.%20Your%20Order%20,%20please.java)
-8.
-9.
+7. [Your Order, please](List%20Of%20Challenges/7.%20Your%20order%2C%20please.java)
+8. [Find the unique number](List%20Of%20Challenges/8.%20Find%20the%20unique%20number.java)
+9. [Create Phone Number](List%20Of%20Challenges/9.%20Create%20Phone%20Number.java)
 
 ### 5 kyu
 
-10.
+10. [Perimeter of squares in rectangle](List%20Of%20Challenges/10.%20Perimeter%20of%20squares%20in%20rectangle.java)
 
 ### 4 kyu
-*Too bad for this*
+
+Coming soon
