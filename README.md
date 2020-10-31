@@ -26,4 +26,4 @@ _' kyu ' is the difficulty: easiest 8kyu, hardest 1kyu_
 ### 5 kyu
 
 ### 4 kyu
-**Too bad for this ;( **
+** Too bad for this ;( **
