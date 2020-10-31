@@ -1,84 +1,46 @@
 //If you wanna download this file remember to rename the file as the class name
 
-/*  Kata The Supermarket Queue 6 kyu
+    /*  Kata Mumbling 7 kyu
     
-    Description:
-    There is a queue for the self-checkout tills at the supermarket. Your task is write a function to calculate the total time required for all the customers to check out!
+        Examples:
+        
+        accum("abcd") -> "A-Bb-Ccc-Dddd"
+        accum("RqaEzty") -> "R-Qq-Aaa-Eeee-Zzzzz-Tttttt-Yyyyyyy"
+        accum("cwAt") -> "C-Ww-Aaa-Tttt"
+    */
 
-    input
-    customers: an array of positive integers representing the queue. Each integer represents a customer, and its value is the amount of time they require to check out.
-    n: a positive integer, the number of checkout tills.
-    output
-    The function should return an integer, the total time required.
+public class Accumul {
+  public static String accum(String s) {
 
-    Important
-    Please look at the examples and clarifications below, to ensure you understand the task correctly :)
+      char charArray[] = s.toLowerCase().toCharArray();               //array of char of the lowercase input String
+      StringBuilder modifiedString = new StringBuilder();             //inizialized 2 StringBuilder for later
+      StringBuilder charConcatenation = new StringBuilder(); ;
+      
+      /* 
+          This is the core logic of everything:
+          Wanted to make a single for loop in this program, to do so made an inverse for starting from the last position
+          of the char array coming to the first one (index 0) to make this possible I used the "insert" method and 
+          inserting in every cicle in the index 0 of a Custom String (The string builder modifiedString), then 
+          I had to make the String sequence requested from the exercise (the number of lowecase was their position
+          of the original array index), so i made a char concatenation insiede another Stringbuild 
+          (the charConcatenation "duh") and here I used a logic as confusing as effective: using the Character.toString
+          method to transform a char into a String and appending that in the charConcatenation variable, then appended 
+          the char trasformed to string but this time repeated "i" times (the position of the index). This was usend 
+          in both the logic of the ternary operator, the difference was that I tracked the value of "i" and when it 
+          was not equal to 0 I also added an "-" at the start of the appending, when the counter reached 0 means that 
+          the for was finished and no more "-" was needed. Another method could also be to not use the ternary operator
+          and at the end return "modifiedString.toString().substring(1)" (this will cut the not wanted value).
+          I preferred using a more compact form, for the return, but it works in both ways, of course
+      */
 
-    Examples
-    queueTime([5,3,4], 1)
-    // should return 12
-    // because when there is 1 till, the total time is just the sum of the times
+      for(int i=charArray.length-1; i >= 0; i--){
+          modifiedString.insert(0, i != 0
+          ? (charConcatenation.append("-").append( Character.toUpperCase(charArray[i]) ).append( Character.toString(charArray[i]).repeat(i) ))
+          : (charConcatenation.append( Character.toUpperCase(charArray[i]) ).append( Character.toString(charArray[i]).repeat(i) )) );
 
-    queueTime([10,2,3,3], 2)
-    // should return 10
-    // because here n=2 and the 2nd, 3rd, and 4th people in the 
-    // queue finish before the 1st person has finished.
-
-    queueTime([2,3,10], 2)
-    // should return 12
-    Clarifications
-    There is only ONE queue serving many tills, and
-    The order of the queue NEVER changes, and
-    The front person in the queue (i.e. the first element in the array/list) proceeds to a till as soon as it becomes free.
-    N.B. You should assume that all the test input will be valid, as specified above.
-
-    P.S. The situation in this kata can be likened to the more-computer-science-related 
-    idea of a thread pool, with relation to running multiple processes at the same time: https://en.wikipedia.org/wiki/Thread_pool */
-import java.util.ArrayList;
-
-public class Solution {
-
-  public static int solveSuperMarketQueue(int[] customers, int n) {
-
-    if (customers.length == 1) {
-      return customers[0];
-    }
-
-    if (n == 1) {
-      int time = 0;
-      for (int i : customers)
-        time += i;
-      return time;
-    }
-
-    ArrayList<Integer> list = new ArrayList<>();
-
-    for (int i = 0; i < customers.length; i++) {
-      list.add(0, Integer.valueOf(customers[i]));
-    }
-
-    int timeTot = 0;
-    int i = 0;
-    while (list.size() != 0) {
-
-      for (i = 0; i < n; i++) {
-
-        if (list.get(i).equals(0))
-          list.remove(i);
-
-        list.set(i, Integer.valueOf(list.get(i) - Integer.valueOf(1)));
-
+          charConcatenation.setLength(0);
       }
 
-      timeTot++;
-    }
-    return timeTot;
+      return modifiedString.toString();
   }
-
-  public static void main(String args[]){
-    int customers[] = {10, 2, 3};
-    int till = 2;
-    System.out.println(solveSuperMarketQueue(customers, till));
-  }
-
 }

@@ -1,12 +1,15 @@
 //If you wanna download this file remember to rename the file as the class name
 
-/*  Kata Vowel Count 7 kyu
-    Description:
-    Return the number (count) of vowels in the given string.
+    /*  Kata Vowel Count 7 kyu
 
-    We will consider a, e, i, o, u as vowels for this Kata (but not y).
+        Description:
+        Return the number (count) of vowels in the given string.
 
-    The input string will only consist of lower case letters and/or spaces. */
+        We will consider a, e, i, o, u as vowels for this Kata (but not y).
+
+        The input string will only consist of lower case letters and/or spaces. 
+    */
+
 public class Vowels {
     public static int getCount(String str) {
         int vowelsCount = 0;
