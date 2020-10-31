@@ -1,5 +1,5 @@
 # Java Problems from codewars.com
-## CodeWars Profile Link: https://www.codewars.com/users/Nick%20Cutin
+## CodeWars Profile: [Nick Cutin](https://www.codewars.com/users/Nick%20Cutin)
 ***
 **To see my solution for a specific challenge just click it's name and you will be redirected to the file of the challenge.**
 **_Each file contains all the original informations given by the author such as the goal of the challenge, the examples provided and the notes_**
@@ -26,4 +26,4 @@ _' kyu ' is the difficulty: easiest 8kyu, hardest 1kyu_
 ### 5 kyu
 
 ### 4 kyu
-** Too bad for this ;( **
+*Too bad for this*
